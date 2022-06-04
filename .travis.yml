@@ -18,7 +18,7 @@ after_success:
   # login to docker hub
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # push image to hub
-  - docker push datbeohbbh/multi-client
-  - docker push datbeohbbh/multi-server
-  - docker push datbeohbbh/multi-nginx
-  - docker push datbeohbbh/multi-worker
+  - docker push datbeohbbg/multi-docker-test-repos:datbeohbbh/multi-client
+  - docker push datbeohbbg/multi-docker-test-repos:datbeohbbh/multi-server
+  - docker push datbeohbbg/multi-docker-test-repos:datbeohbbh/multi-nginx
+  - docker push datbeohbbg/multi-docker-test-repos:datbeohbbh/multi-worker
